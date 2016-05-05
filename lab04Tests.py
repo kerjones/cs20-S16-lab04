@@ -6,113 +6,113 @@ from lab04Funcs import *
 
 class TestLab04Functions(unittest.TestCase): 
 
-    # test cases for notStringContainingE
-  
-    def test_notStringContainingE_1(self):
-         self.assertEqual( notStringContainingE('Fred') , False)
-  
-    def test_notStringContainingE_2(self):
-         self.assertEqual( notStringContainingE('Jane') , False)
-  
-    def test_notStringContainingE_3(self):
-         self.assertEqual( notStringContainingE('Santa') , True)
-  
-    def test_notStringContainingE_4(self):
-         self.assertEqual( notStringContainingE('Barbara') ,   True)
-  
-    def test_notStringContainingE_5(self):
-         self.assertEqual( notStringContainingE('Edward') ,  False )
-  
-    def test_notStringContainingE_6(self):
-         self.assertEqual( notStringContainingE('Ice Cream'),   False)
-  
-    def test_notStringContainingE_7(self):
-         self.assertEqual( notStringContainingE(23),  True )
-  
-    def test_notStringContainingE_8(self):
-         self.assertEqual( notStringContainingE(['e']) ,   True)
-  
-    # tests for hasNoX
-  
-    def test_hasNoX_1(self):
-         self.assertEqual( hasNoX('Fred') , True )
-  
-    def test_hasNoX_2(self):
-         self.assertEqual( hasNoX('Xerox') , False )
-  
-    def test_hasNoX_3(self):
-         self.assertEqual( hasNoX('Box') , False )
-  
-    def test_hasNoX_4(self):
-         self.assertEqual( hasNoX('Xbox') , False )
-  
-    def test_hasNoX_5(self):
-         self.assertEqual( hasNoX(23) , True )
-  
-    def test_hasNoX_6(self):
-         self.assertEqual( hasNoX(['x']) , True )
-  
-    def test_hasNoX_7(self):
-         self.assertEqual( hasNoX('x') , False )
-  
-    # tests for isListOfSimpleNumeric
-  
-    def test_isListOfSimpleNumeric_1(self):
-         self.assertEqual( isListOfSimpleNumeric('Fred') , False )
-  
-    def test_isListOfSimpleNumeric_2(self):
-         self.assertEqual( isListOfSimpleNumeric(3) , False )
-  
-    def test_isListOfSimpleNumeric_3(self):
-         self.assertEqual( isListOfSimpleNumeric([3]) , True )
-  
-    def test_isListOfSimpleNumeric_4(self):
-         self.assertEqual( isListOfSimpleNumeric([3.4]) , True )
-  
-    def test_isListOfSimpleNumeric_5(self):
-         self.assertEqual( isListOfSimpleNumeric([2,3,4,5.6,7]) , True )
-  
-    def test_isListOfSimpleNumeric_6(self):
-         self.assertEqual( isListOfSimpleNumeric([2,3,'oops',5]) , False )
-  
-    def test_isListOfSimpleNumeric_7(self):
-         self.assertEqual( isListOfSimpleNumeric([2,3,[4]]) , False )
-  
-    def test_isListOfSimpleNumeric_8(self):
-         self.assertEqual( isListOfSimpleNumeric([]) , True )
-  
-    # tests for isListOfIntegers
-  
-  
-    def test_isListOfIntegers_1(self):
-         self.assertEqual( isListOfIntegers('Fred') , False )
-  
-    def test_isListOfIntegers_2(self):
-         self.assertEqual( isListOfIntegers(3) , False )
-  
-    def test_isListOfIntegers_3(self):
-         self.assertEqual( isListOfIntegers([3]) , True )
-  
-    def test_isListOfIntegers_4(self):
-         self.assertEqual( isListOfIntegers([3.4]) , False )
-  
-    def test_isListOfIntegers_5(self):
-         self.assertEqual( isListOfIntegers([2,3,4,5.6,7]) , False )
-  
-    def test_isListOfIntegers_6(self):
-         self.assertEqual( isListOfIntegers([2,3,'oops',5]) , False )
-  
-    def test_isListOfIntegers_7(self):
-         self.assertEqual( isListOfIntegers([2,3,4,5,6,7]) , True )
-  
-    def test_isListOfIntegers_8(self):
-         self.assertEqual( isListOfIntegers([2,3,[4]]) , False )
-  
-    def test_isListOfIntegers_9(self):
-         self.assertEqual( isListOfIntegers([]) , True )
-  
-    # tests for isListOfEvenIntegers
-  
+##    # test cases for notStringContainingE
+##  
+##    def test_notStringContainingE_1(self):
+##         self.assertEqual( notStringContainingE('Fred') , False)
+##  
+##    def test_notStringContainingE_2(self):
+##         self.assertEqual( notStringContainingE('Jane') , False)
+##  
+##    def test_notStringContainingE_3(self):
+##         self.assertEqual( notStringContainingE('Santa') , True)
+##  
+##    def test_notStringContainingE_4(self):
+##         self.assertEqual( notStringContainingE('Barbara') ,   True)
+##  
+##    def test_notStringContainingE_5(self):
+##         self.assertEqual( notStringContainingE('Edward') ,  False )
+##  
+##    def test_notStringContainingE_6(self):
+##         self.assertEqual( notStringContainingE('Ice Cream'),   False)
+##  
+##    def test_notStringContainingE_7(self):
+##         self.assertEqual( notStringContainingE(23),  True )
+##  
+##    def test_notStringContainingE_8(self):
+##         self.assertEqual( notStringContainingE(['e']) ,   True)
+##  
+##    # tests for hasNoX
+##  
+##    def test_hasNoX_1(self):
+##         self.assertEqual( hasNoX('Fred') , True )
+##  
+##    def test_hasNoX_2(self):
+##         self.assertEqual( hasNoX('Xerox') , False )
+####  
+####    def test_hasNoX_3(self):
+####         self.assertEqual( hasNoX('Box') , False )
+####  
+####    def test_hasNoX_4(self):
+####         self.assertEqual( hasNoX('Xbox') , False )
+####  
+####    def test_hasNoX_5(self):
+####         self.assertEqual( hasNoX(23) , True )
+####  
+####    def test_hasNoX_6(self):
+####         self.assertEqual( hasNoX(['x']) , True )
+####  
+####    def test_hasNoX_7(self):
+####         self.assertEqual( hasNoX('x') , False )
+##  
+##    # tests for isListOfSimpleNumeric
+##  
+##    def test_isListOfSimpleNumeric_1(self):
+##         self.assertEqual( isListOfSimpleNumeric('Fred') , False )
+##  
+##    def test_isListOfSimpleNumeric_2(self):
+##         self.assertEqual( isListOfSimpleNumeric(3) , False )
+##  
+##    def test_isListOfSimpleNumeric_3(self):
+##         self.assertEqual( isListOfSimpleNumeric([3]) , True )
+##  
+##    def test_isListOfSimpleNumeric_4(self):
+##         self.assertEqual( isListOfSimpleNumeric([3.4]) , True )
+##  
+##    def test_isListOfSimpleNumeric_5(self):
+##         self.assertEqual( isListOfSimpleNumeric([2,3,4,5.6,7]) , True )
+##  
+##    def test_isListOfSimpleNumeric_6(self):
+##         self.assertEqual( isListOfSimpleNumeric([2,3,'oops',5]) , False )
+##  
+##    def test_isListOfSimpleNumeric_7(self):
+##         self.assertEqual( isListOfSimpleNumeric([2,3,[4]]) , False )
+##  
+##    def test_isListOfSimpleNumeric_8(self):
+##         self.assertEqual( isListOfSimpleNumeric([]) , True )
+##  
+##    # tests for isListOfIntegers
+##  
+##  
+##    def test_isListOfIntegers_1(self):
+##         self.assertEqual( isListOfIntegers('Fred') , False )
+##  
+##    def test_isListOfIntegers_2(self):
+##         self.assertEqual( isListOfIntegers(3) , False )
+##  
+##    def test_isListOfIntegers_3(self):
+##         self.assertEqual( isListOfIntegers([3]) , True )
+##  
+##    def test_isListOfIntegers_4(self):
+##         self.assertEqual( isListOfIntegers([3.4]) , False )
+##  
+##    def test_isListOfIntegers_5(self):
+##         self.assertEqual( isListOfIntegers([2,3,4,5.6,7]) , False )
+##  
+##    def test_isListOfIntegers_6(self):
+##         self.assertEqual( isListOfIntegers([2,3,'oops',5]) , False )
+##  
+##    def test_isListOfIntegers_7(self):
+##         self.assertEqual( isListOfIntegers([2,3,4,5,6,7]) , True )
+##  
+##    def test_isListOfIntegers_8(self):
+##         self.assertEqual( isListOfIntegers([2,3,[4]]) , False )
+##  
+##    def test_isListOfIntegers_9(self):
+##         self.assertEqual( isListOfIntegers([]) , True )
+##  
+##    # tests for isListOfEvenIntegers
+##  
     def test_isListOfEvenIntegers_1(self):
          self.assertEqual( isListOfEvenIntegers('Fred') , False )
   
@@ -166,7 +166,7 @@ class TestLab04Functions(unittest.TestCase):
     def test_totalLength_6(self):
         self.assertEqual( totalLength(['x',34,'xxxx']),    5)
 
-    
+
 ##    # tests for lengthOfEach
 ##
 ##
@@ -252,8 +252,6 @@ class TestLab04Functions(unittest.TestCase):
 ### just some tests.  It depends on which line you comment out (or not)
 ##
 if __name__ == '__main__':
-
-    # To run ALL tests, uncomment the "unittest.main(exit=False)" line
     unittest.main(exit=False)  
 ##
 ##    # Uncomment "runTestsWithPrefix" line to run just SOME tests

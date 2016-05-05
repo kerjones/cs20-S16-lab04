@@ -5,6 +5,7 @@ from lab02Funcs import isList
 from lab02Funcs import isSimpleNumeric
 
 def notStringContainingE(word):
+##   PROBLEM WITH CAPITAL E
    """
    return True when word is a string that contains no letter 'e' (or 'E')
    It should work both for lower and upper case.
@@ -37,6 +38,7 @@ def notStringContainingE(word):
 
 
 def hasNoX(word):
+##   WHY DOES E WORK BYT X DOESNT?
    """
    return True when word is a string that contains no letter 'x' (and no letter 'X')
    It should work both for lower and upper case.
@@ -64,7 +66,6 @@ def hasNoX(word):
      if letter == 'x' or letter == 'X':   
        return False
    return True
-
 
 def isListOfSimpleNumeric(theList):
    """
@@ -98,6 +99,7 @@ def isListOfSimpleNumeric(theList):
 
 
 def isListOfIntegers(theList):
+##   WHERE IS THE STUB COMING FROM???
    """
    indicates whether value of argument is a list of only int 
    Note: empty list should return True---it doesn't contain anything that ISN'T int
@@ -130,6 +132,7 @@ def isListOfIntegers(theList):
    return True
 
 
+
 def isListOfEvenIntegers(theList):
    """
    indicates whether value of argument is a list of only even integers
@@ -160,10 +163,10 @@ def isListOfEvenIntegers(theList):
    True
    >>>
    """
-   if not (isListOfIntegers(theList)):
+   if not (isList(theList)):
       return False
-   for item in theList:
-      if not item%2==0:
+   for x in theList:
+      if not x%2==0:
          return False
    return True
     
@@ -174,7 +177,6 @@ def isListOfEvenIntegers(theList):
 # @@@   Use the accumulator pattern to compute the total length of all the words in a string
 # @@@   The accumulator will be an integer that starts at zero.
 # @@@   You'll use a for loop to look at each item in the list
-
 
 def totalLength(listOfStrings):
     """
@@ -199,9 +201,6 @@ def totalLength(listOfStrings):
        return False
    
 
-    
-##
-##
 ##### @@@ NOW, write a function called lengthOfEach
 ##### @@@  Use the accumulator pattern to make a list of each of the lengths of the words
 ##### @@@  You'll use a for loop, starting the list as an empty list
