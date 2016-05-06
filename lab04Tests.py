@@ -80,38 +80,38 @@ class TestLab04Functions(unittest.TestCase):
 ##  
 ##    def test_isListOfSimpleNumeric_8(self):
 ##         self.assertEqual( isListOfSimpleNumeric([]) , True )
-##  
-##    # tests for isListOfIntegers
-##  
-##  
-##    def test_isListOfIntegers_1(self):
-##         self.assertEqual( isListOfIntegers('Fred') , False )
-##  
-##    def test_isListOfIntegers_2(self):
-##         self.assertEqual( isListOfIntegers(3) , False )
-##  
-##    def test_isListOfIntegers_3(self):
-##         self.assertEqual( isListOfIntegers([3]) , True )
-##  
-##    def test_isListOfIntegers_4(self):
-##         self.assertEqual( isListOfIntegers([3.4]) , False )
-##  
-##    def test_isListOfIntegers_5(self):
-##         self.assertEqual( isListOfIntegers([2,3,4,5.6,7]) , False )
-##  
-##    def test_isListOfIntegers_6(self):
-##         self.assertEqual( isListOfIntegers([2,3,'oops',5]) , False )
-##  
-##    def test_isListOfIntegers_7(self):
-##         self.assertEqual( isListOfIntegers([2,3,4,5,6,7]) , True )
-##  
-##    def test_isListOfIntegers_8(self):
-##         self.assertEqual( isListOfIntegers([2,3,[4]]) , False )
-##  
-##    def test_isListOfIntegers_9(self):
-##         self.assertEqual( isListOfIntegers([]) , True )
-##  
-##    # tests for isListOfEvenIntegers
+  
+    # tests for isListOfIntegers
+  
+  
+    def test_isListOfIntegers_1(self):
+         self.assertEqual( isListOfIntegers('Fred') , False )
+  
+    def test_isListOfIntegers_2(self):
+         self.assertEqual( isListOfIntegers(3) , False )
+  
+    def test_isListOfIntegers_3(self):
+         self.assertEqual( isListOfIntegers([3]) , True )
+  
+    def test_isListOfIntegers_4(self):
+         self.assertEqual( isListOfIntegers([3.4]) , False )
+  
+    def test_isListOfIntegers_5(self):
+         self.assertEqual( isListOfIntegers([2,3,4,5.6,7]) , False )
+  
+    def test_isListOfIntegers_6(self):
+         self.assertEqual( isListOfIntegers([2,3,'oops',5]) , False )
+  
+    def test_isListOfIntegers_7(self):
+         self.assertEqual( isListOfIntegers([2,3,4,5,6,7]) , True )
+  
+    def test_isListOfIntegers_8(self):
+         self.assertEqual( isListOfIntegers([2,3,[4]]) , False )
+  
+    def test_isListOfIntegers_9(self):
+         self.assertEqual( isListOfIntegers([]) , True )
+  
+    # tests for isListOfEvenIntegers
 ##  
     def test_isListOfEvenIntegers_1(self):
          self.assertEqual( isListOfEvenIntegers('Fred') , False )
