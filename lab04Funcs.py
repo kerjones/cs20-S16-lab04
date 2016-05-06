@@ -3,6 +3,8 @@
 
 from lab02Funcs import isList
 from lab02Funcs import isSimpleNumeric
+from lab02Funcs import isSring
+
 
 def notStringContainingE(word):
 ##   PROBLEM WITH CAPITAL E
@@ -193,11 +195,12 @@ def totalLength(listOfStrings):
     8
     """
     result=0
-    if not isList (listOfStrings):
+    if not isList (listOfStrings) or (type(listOfStrings) == str):
        return False
-    for str in listOfStrings:
-         return sum (len (str))
-    if not (type(listOfStrings)==str):
+      
+    for str in range [0:]:
+       result= result+len (str (listOfStrings))
+   
        return False
    
 

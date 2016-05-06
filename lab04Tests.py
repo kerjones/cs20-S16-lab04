@@ -167,85 +167,85 @@ class TestLab04Functions(unittest.TestCase):
         self.assertEqual( totalLength(['x',34,'xxxx']),    5)
 
 
-    # tests for lengthOfEach
-
-
-    def test_lengthOfEach_1(self):
-        self.assertEqual( lengthOfEach('1') , False )
-
-    def test_lengthOfEach_2(self):
-        self.assertEqual( lengthOfEach(['a','b']),    [1, 1])
-
-    def test_lengthOfEach_3(self):
-        self.assertEqual( lengthOfEach([]),    [])
-
-    def test_lengthOfEach_4(self):
-        self.assertEqual( lengthOfEach(['Go','Gauchos']),    [2, 7])
-
-    def test_lengthOfEach_5(self):
-        self.assertEqual( lengthOfEach(['x','xxx','xxxx']),    [1, 3, 4])
-    
-    # tests for countEvens
-
-    def test_countEvens_1(self):
-        self.assertEqual( countEvens('1') , False )
-
-    def test_countEvens_2(self):
-        self.assertEqual( countEvens(['a','b']) , False )
-
-    def test_countEvens_3(self):
-        self.assertEqual( countEvens([]),    0)
-
-    def test_countEvens_4(self):
-        self.assertEqual( countEvens([1,2,3,4,5]),    2)
-
-    def test_countEvens_5(self):
-        self.assertEqual( countEvens([1]),    0)
-
-    def test_countEvens_6(self):
-        self.assertEqual( countEvens([3,2]),    1)
-
-    def test_countEvens_7(self):
-        self.assertEqual( countEvens([2,3,4]),    2)
-
-    # tests for onlyEvens
-
-    def test_onlyEvens_1(self):
-        self.assertEqual( onlyEvens('1') , False )
-
-    def test_onlyEvens_2(self):
-        self.assertEqual( onlyEvens(['a','b']) , False )
-
-    def test_onlyEvens_3(self):
-        self.assertEqual( onlyEvens([]),    [])
-
-    def test_onlyEvens_4(self):
-        self.assertEqual( onlyEvens([1,2,3,4,5]),    [2, 4])
-
-    def test_onlyEvens_5(self):
-        self.assertEqual( onlyEvens([1]),    [])
-
-    def test_onlyEvens_6(self):
-        self.assertEqual( onlyEvens([1,3]),    [])
-
-    def test_onlyEvens_7(self):
-        self.assertEqual( onlyEvens([3,2]),    [2])
-
-    def test_onlyEvens_1(self):
-        self.assertEqual( onlyEvens([2,3,4]),    [2, 4])
-
-    # End of tests for lab04 
-
-
-def runTestsWithPrefix(testFile,prefix):
-    """
-    run only tests from testFile with a certain prefix
-    Example: runTestsWithPrefix("lab03Tests.py","test_isPrimaryColor")
-    """
-    loader = unittest.TestLoader()
-    loader.testMethodPrefix = prefix
-    suite = loader.discover('.', pattern = testFile) 
-    unittest.TextTestRunner(verbosity=2).run(suite)
+##    # tests for lengthOfEach
+##
+##
+##    def test_lengthOfEach_1(self):
+##        self.assertEqual( lengthOfEach('1') , False )
+##
+##    def test_lengthOfEach_2(self):
+##        self.assertEqual( lengthOfEach(['a','b']),    [1, 1])
+##
+##    def test_lengthOfEach_3(self):
+##        self.assertEqual( lengthOfEach([]),    [])
+##
+##    def test_lengthOfEach_4(self):
+##        self.assertEqual( lengthOfEach(['Go','Gauchos']),    [2, 7])
+##
+##    def test_lengthOfEach_5(self):
+##        self.assertEqual( lengthOfEach(['x','xxx','xxxx']),    [1, 3, 4])
+##    
+##    # tests for countEvens
+##
+##    def test_countEvens_1(self):
+##        self.assertEqual( countEvens('1') , False )
+##
+##    def test_countEvens_2(self):
+##        self.assertEqual( countEvens(['a','b']) , False )
+##
+##    def test_countEvens_3(self):
+##        self.assertEqual( countEvens([]),    0)
+##
+##    def test_countEvens_4(self):
+##        self.assertEqual( countEvens([1,2,3,4,5]),    2)
+##
+##    def test_countEvens_5(self):
+##        self.assertEqual( countEvens([1]),    0)
+##
+##    def test_countEvens_6(self):
+##        self.assertEqual( countEvens([3,2]),    1)
+##
+##    def test_countEvens_7(self):
+##        self.assertEqual( countEvens([2,3,4]),    2)
+##
+##    # tests for onlyEvens
+##
+##    def test_onlyEvens_1(self):
+##        self.assertEqual( onlyEvens('1') , False )
+##
+##    def test_onlyEvens_2(self):
+##        self.assertEqual( onlyEvens(['a','b']) , False )
+##
+##    def test_onlyEvens_3(self):
+##        self.assertEqual( onlyEvens([]),    [])
+##
+##    def test_onlyEvens_4(self):
+##        self.assertEqual( onlyEvens([1,2,3,4,5]),    [2, 4])
+##
+##    def test_onlyEvens_5(self):
+##        self.assertEqual( onlyEvens([1]),    [])
+##
+##    def test_onlyEvens_6(self):
+##        self.assertEqual( onlyEvens([1,3]),    [])
+##
+##    def test_onlyEvens_7(self):
+##        self.assertEqual( onlyEvens([3,2]),    [2])
+##
+##    def test_onlyEvens_1(self):
+##        self.assertEqual( onlyEvens([2,3,4]),    [2, 4])
+##
+##    # End of tests for lab04 
+##
+##
+##def runTestsWithPrefix(testFile,prefix):
+##    """
+##    run only tests from testFile with a certain prefix
+##    Example: runTestsWithPrefix("lab03Tests.py","test_isPrimaryColor")
+##    """
+##    loader = unittest.TestLoader()
+##    loader.testMethodPrefix = prefix
+##    suite = loader.discover('.', pattern = testFile) 
+##    unittest.TextTestRunner(verbosity=2).run(suite)
 
 
 # When you run this file, it runs either ALL the tests, or
