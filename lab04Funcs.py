@@ -3,7 +3,7 @@
 
 from lab02Funcs import isList
 from lab02Funcs import isSimpleNumeric
-from lab02Funcs import isSring
+from lab02Funcs import isString
 
 
 def notStringContainingE(word):
@@ -194,14 +194,12 @@ def totalLength(listOfStrings):
     >>> totalLength(['x','xxx','xxxx'])
     8
     """
-    result=0
-    if not isList (listOfStrings) or (type(listOfStrings) == str):
+    if not isList (listOfStrings):
        return False
-      
-    for str in range [0:]:
-       result= result+len (str (listOfStrings))
-   
-       return False
+    if listOfStrings == []:
+       return 0
+    for i in listOfStrings:
+       return(sum(len(i) for i in listOfStrings))
    
 
 ##### @@@ NOW, write a function called lengthOfEach
@@ -303,7 +301,6 @@ def totalLength(listOfStrings):
 ##
 ##    return "stub"
 ##    
-##
 ##
 ##
 ##
