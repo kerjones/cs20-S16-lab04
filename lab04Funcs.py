@@ -7,7 +7,6 @@ from lab02Funcs import isString
 
 
 def notStringContainingE(word):
-##   PROBLEM WITH CAPITAL E
    """
    return True when word is a string that contains no letter 'e' (or 'E')
    It should work both for lower and upper case.
@@ -40,7 +39,6 @@ def notStringContainingE(word):
 
 
 def hasNoX(word):
-##   WHY DOES E WORK BYT X DOESNT?
    """
    return True when word is a string that contains no letter 'x' (and no letter 'X')
    It should work both for lower and upper case.
@@ -101,7 +99,6 @@ def isListOfSimpleNumeric(theList):
 
 
 def isListOfIntegers(theList):
-##   WHERE IS THE STUB COMING FROM???
    """
    indicates whether value of argument is a list of only int 
    Note: empty list should return True---it doesn't contain anything that ISN'T int
@@ -126,10 +123,10 @@ def isListOfIntegers(theList):
    >>> isListOfIntegers([])
    True
    """
-   if not isList(theList):
+   if not (isList(theList)):
       return False
    for item in theList:
-     if not type(theList) == int:
+     if not type(item) == int:
         return False
    return True
 
@@ -194,42 +191,44 @@ def totalLength(listOfStrings):
     >>> totalLength(['x','xxx','xxxx'])
     8
     """
-    if not isList (listOfStrings):
-       return False
     if listOfStrings == []:
        return 0
+    if not isList (listOfStrings):
+       return False
     for i in listOfStrings:
        return(sum(len(i) for i in listOfStrings))
-   
 
-##### @@@ NOW, write a function called lengthOfEach
-##### @@@  Use the accumulator pattern to make a list of each of the lengths of the words
-##### @@@  You'll use a for loop, starting the list as an empty list
-##
-##def lengthOfEach(listOfStrings):
-##    """
-##    given list of strings, returns list of ints correponding to length of each string, otherwise False.
-##
-##    empty list yields empty list.
-##
-##    >>> lengthOfEach('1')
-##    False
-##    >>> lengthOfEach(['a','b'])
-##    [1, 1]
-##    >>> lengthOfEach([])
-##    []
-##    >>> lengthOfEach(['Go','Gauchos'])
-##    [2, 7]
-##    >>> lengthOfEach(['x','xxx','xxxx'])
-##    [1, 3, 4]
-##    >>>
-##    
-##    
-##    """
-##    return "stub"
-##    
-##
-##
+### @@@ NOW, write a function called lengthOfEach
+### @@@  Use the accumulator pattern to make a list of each of the lengths of the words
+### @@@  You'll use a for loop, starting the list as an empty list
+
+def lengthOfEach(listOfStrings):
+    """
+    given list of strings, returns list of ints correponding to length of each string, otherwise False.
+
+    empty list yields empty list.
+
+    >>> lengthOfEach('1')
+    False
+    >>> lengthOfEach(['a','b'])
+    [1, 1]
+    >>> lengthOfEach([])
+    []
+    >>> lengthOfEach(['Go','Gauchos'])
+    [2, 7]
+    >>> lengthOfEach(['x','xxx','xxxx'])
+    [1, 3, 4]
+    >>>
+   """
+    if listOfStrings == []:
+       return []
+    if not isList (listOfStrings):
+       return False
+##    for item in range [0,len(listOfStrings)]:
+##       return [len(item)]
+    
+
+
 ##### @@@ NOW, write a function called countEvens
 ##### @@@ Use the accumulator pattern, starting at zero
 ##### @@@  and add one each time you find an even number

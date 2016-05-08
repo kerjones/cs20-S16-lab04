@@ -167,24 +167,24 @@ class TestLab04Functions(unittest.TestCase):
         self.assertEqual( totalLength(['x',34,'xxxx']),    5)
 
 
-##    # tests for lengthOfEach
-##
-##
-##    def test_lengthOfEach_1(self):
-##        self.assertEqual( lengthOfEach('1') , False )
-##
-##    def test_lengthOfEach_2(self):
-##        self.assertEqual( lengthOfEach(['a','b']),    [1, 1])
-##
-##    def test_lengthOfEach_3(self):
-##        self.assertEqual( lengthOfEach([]),    [])
-##
-##    def test_lengthOfEach_4(self):
-##        self.assertEqual( lengthOfEach(['Go','Gauchos']),    [2, 7])
-##
-##    def test_lengthOfEach_5(self):
-##        self.assertEqual( lengthOfEach(['x','xxx','xxxx']),    [1, 3, 4])
-##    
+    # tests for lengthOfEach
+
+
+    def test_lengthOfEach_1(self):
+        self.assertEqual( lengthOfEach('1') , False )
+
+    def test_lengthOfEach_2(self):
+        self.assertEqual( lengthOfEach(['a','b']),    [1, 1])
+
+    def test_lengthOfEach_3(self):
+        self.assertEqual( lengthOfEach([]),    [])
+
+    def test_lengthOfEach_4(self):
+        self.assertEqual( lengthOfEach(['Go','Gauchos']),    [2, 7])
+
+    def test_lengthOfEach_5(self):
+        self.assertEqual( lengthOfEach(['x','xxx','xxxx']),    [1, 3, 4])
+    
 ##    # tests for countEvens
 ##
 ##    def test_countEvens_1(self):
