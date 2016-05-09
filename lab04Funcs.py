@@ -220,40 +220,44 @@ def lengthOfEach(listOfStrings):
     x=[len(s) for s in listOfStrings]
     return x
 
-##### @@@ NOW, write a function called countEvens
-##### @@@ Use the accumulator pattern, starting at zero
-##### @@@  and add one each time you find an even number
-##
-##
-##
-##
-##def countEvens(listOfInts):
-##    """
-##    given a list of ints, counts even ints in list.  Otherwise, returns False.
-## 
-##    yields 0 for empty list, or list of ints with no evens in it.
-##
-##
-##    >>> countEvens('1')
-##    False
-##    >>> countEvens(['a','b'])
-##    False
-##    >>> countEvens([])
-##    0
-##    >>> countEvens([1,2,3,4,5])
-##    2
-##    >>> countEvens([1])
-##    0
-##    >>> countEvens([3,2])
-##    1
-##    >>> countEvens([2,3,4])
-##    2
-##    >>>
-##    
-##    """
-##    return "stub"
-##
-##
+
+def countEvens(listOfInts):
+    """
+    given a list of ints, counts even ints in list.  Otherwise, returns False.
+ 
+    yields 0 for empty list, or list of ints with no evens in it.
+
+
+    >>> countEvens('1')
+    False
+    >>> countEvens(['a','b'])
+    False
+    >>> countEvens([])
+    0
+    >>> countEvens([1,2,3,4,5])
+    2
+    >>> countEvens([1])
+    0
+    >>> countEvens([3,2])
+    1
+    >>> countEvens([2,3,4])
+    2
+    >>>
+    
+    """
+    result=0
+    if listOfInts == []:
+       return 0
+    if not isList (listOfInts):
+       return False
+    for i in listOfInts:
+       if not type(i) == int:
+          return False
+       if i%2 == 0:
+          result=result+1
+    return result
+      
+
 ##### @@@ NOW, write a function called onlyEvens
 ##### @@@ Use the accumulator pattern, starting with an empty list.
 ##### @@@ Use a for loop to traverse the list.  Each time you find an item
