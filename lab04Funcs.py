@@ -194,10 +194,9 @@ def totalLength(listOfStrings):
     if not isList (listOfStrings):
        return False
     for i in listOfStrings:
-       result= result+(len(i))
-       return result
-      
-       #return(sum(len(i) for i in listOfStrings))
+       if type (i)==str:
+          result= result+(len(i))
+    return result
 
 ### @@@ NOW, write a function called lengthOfEach
 ### @@@  Use the accumulator pattern to make a list of each of the lengths of the words
