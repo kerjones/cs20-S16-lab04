@@ -185,29 +185,29 @@ class TestLab04Functions(unittest.TestCase):
     def test_lengthOfEach_5(self):
         self.assertEqual( lengthOfEach(['x','xxx','xxxx']),    [1, 3, 4])
     
-##    # tests for countEvens
-##
-##    def test_countEvens_1(self):
-##        self.assertEqual( countEvens('1') , False )
-##
-##    def test_countEvens_2(self):
-##        self.assertEqual( countEvens(['a','b']) , False )
-##
-##    def test_countEvens_3(self):
-##        self.assertEqual( countEvens([]),    0)
-##
-##    def test_countEvens_4(self):
-##        self.assertEqual( countEvens([1,2,3,4,5]),    2)
-##
-##    def test_countEvens_5(self):
-##        self.assertEqual( countEvens([1]),    0)
-##
-##    def test_countEvens_6(self):
-##        self.assertEqual( countEvens([3,2]),    1)
-##
-##    def test_countEvens_7(self):
-##        self.assertEqual( countEvens([2,3,4]),    2)
-##
+    # tests for countEvens
+
+    def test_countEvens_1(self):
+        self.assertEqual( countEvens('1') , False )
+
+    def test_countEvens_2(self):
+        self.assertEqual( countEvens(['a','b']) , False )
+
+    def test_countEvens_3(self):
+        self.assertEqual( countEvens([]),    0)
+
+    def test_countEvens_4(self):
+        self.assertEqual( countEvens([1,2,3,4,5]),    2)
+
+    def test_countEvens_5(self):
+        self.assertEqual( countEvens([1]),    0)
+
+    def test_countEvens_6(self):
+        self.assertEqual( countEvens([3,2]),    1)
+
+    def test_countEvens_7(self):
+        self.assertEqual( countEvens([2,3,4]),    2)
+
 ##    # tests for onlyEvens
 ##
 ##    def test_onlyEvens_1(self):
