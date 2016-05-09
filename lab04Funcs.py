@@ -67,6 +67,7 @@ def hasNoX(word):
        return False
    return True
 
+
 def isListOfSimpleNumeric(theList):
    """
    indicates whether value of argument is a list of only simple numerics (int or float)
@@ -131,7 +132,6 @@ def isListOfIntegers(theList):
    return True
 
 
-
 def isListOfEvenIntegers(theList):
    """
    indicates whether value of argument is a list of only even integers
@@ -168,11 +168,7 @@ def isListOfEvenIntegers(theList):
       if not x%2==0:
          return False
    return True
-    
-# @@@ NOW, write a function called totalLength(x)
-# @@@   Use the accumulator pattern to compute the total length of all the words in a string
-# @@@   The accumulator will be an integer that starts at zero.
-# @@@   You'll use a for loop to look at each item in the list
+
 
 def totalLength(listOfStrings):
     """
@@ -198,9 +194,6 @@ def totalLength(listOfStrings):
           result= result+(len(i))
     return result
 
-### @@@ NOW, write a function called lengthOfEach
-### @@@  Use the accumulator pattern to make a list of each of the lengths of the words
-### @@@  You'll use a for loop, starting the list as an empty list
 
 def lengthOfEach(listOfStrings):
     """
@@ -224,10 +217,8 @@ def lengthOfEach(listOfStrings):
        return []
     if not isList (listOfStrings):
        return False
-##    for item in range [0,len(listOfStrings)]:
-##       return [len(item)]
-    
-
+    x=[len(s) for s in listOfStrings]
+    return x
 
 ##### @@@ NOW, write a function called countEvens
 ##### @@@ Use the accumulator pattern, starting at zero
