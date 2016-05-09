@@ -169,9 +169,6 @@ def isListOfEvenIntegers(theList):
          return False
    return True
     
-
-
-
 # @@@ NOW, write a function called totalLength(x)
 # @@@   Use the accumulator pattern to compute the total length of all the words in a string
 # @@@   The accumulator will be an integer that starts at zero.
@@ -191,12 +188,16 @@ def totalLength(listOfStrings):
     >>> totalLength(['x','xxx','xxxx'])
     8
     """
+    result=0
     if listOfStrings == []:
        return 0
     if not isList (listOfStrings):
        return False
     for i in listOfStrings:
-       return(sum(len(i) for i in listOfStrings))
+       result= result+(len(i))
+       return result
+      
+       #return(sum(len(i) for i in listOfStrings))
 
 ### @@@ NOW, write a function called lengthOfEach
 ### @@@  Use the accumulator pattern to make a list of each of the lengths of the words
