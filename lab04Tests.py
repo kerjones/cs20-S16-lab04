@@ -236,20 +236,17 @@ class TestLab04Functions(unittest.TestCase):
 
     # End of tests for lab04 
 
-##
-##def runTestsWithPrefix(testFile,prefix):
-##    """
-##    run only tests from testFile with a certain prefix
-##    Example: runTestsWithPrefix("lab03Tests.py","test_isPrimaryColor")
-##    """
-##    loader = unittest.TestLoader()
-##    loader.testMethodPrefix = prefix
-##    suite = loader.discover('.', pattern = testFile) 
-##    unittest.TextTestRunner(verbosity=2).run(suite)
 
+def runTestsWithPrefix(testFile,prefix):
+    """
+    run only tests from testFile with a certain prefix
+    Example: runTestsWithPrefix("lab03Tests.py","test_isPrimaryColor")
+    """
+    loader = unittest.TestLoader()
+    loader.testMethodPrefix = prefix
+    suite = loader.discover('.', pattern = testFile) 
+    unittest.TextTestRunner(verbosity=2).run(suite)
 
-# When you run this file, it runs either ALL the tests, or
-# just some tests.  It depends on which line you comment out (or not)
 
 if __name__ == '__main__':
     unittest.main(exit=False)  

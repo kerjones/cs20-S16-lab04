@@ -256,13 +256,6 @@ def countEvens(listOfInts):
        if i%2 == 0:
           result=result+1
     return result
-      
-
-### @@@ NOW, write a function called onlyEvens
-### @@@ Use the accumulator pattern, starting with an empty list.
-### @@@ Use a for loop to traverse the list.  Each time you find an item
-### @@@  if it isn't an int, return False---otherwise, if it is even, add
-### @@@  it to your accumulated list.
 
 
 def onlyEvens(listOfInts):
@@ -289,12 +282,16 @@ def onlyEvens(listOfInts):
     [2, 4]
     >>>
 
-
-
     """
-
-    return "stub"
-    
-
-
+    result = []
+    if listOfInts == []:
+       return []
+    if not isList (listOfInts):
+       return False
+    for i in listOfInts:
+       if not type (i)==int:
+          return False
+       if i%2==0:
+          result.append(i)
+    return result
 
