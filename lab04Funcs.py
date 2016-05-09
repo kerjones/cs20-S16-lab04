@@ -258,43 +258,43 @@ def countEvens(listOfInts):
     return result
       
 
-##### @@@ NOW, write a function called onlyEvens
-##### @@@ Use the accumulator pattern, starting with an empty list.
-##### @@@ Use a for loop to traverse the list.  Each time you find an item
-##### @@@  if it isn't an int, return False---otherwise, if it is even, add
-##### @@@  it to your accumulated list.
-##
-##
-##def onlyEvens(listOfInts):
-##    """
-##    given a list of ints, return new list with only the even ones.  Otherwise, return false.
-##
-##    empty list yields empty list
-##
-##    >>> onlyEvens('1')
-##    False
-##    >>> onlyEvens(['a','b'])
-##    False
-##    >>> onlyEvens([])
-##    []
-##    >>> onlyEvens([1,2,3,4,5])
-##    [2, 4]
-##    >>> onlyEvens([1])
-##    []
-##    >>> onlyEvens([1,3])
-##    []
-##    >>> onlyEvens([3,2])
-##    [2]
-##    >>> onlyEvens([2,3,4])
-##    [2, 4]
-##    >>>
-##
-##
-##
-##    """
-##
-##    return "stub"
-##    
-##
-##
-##
+### @@@ NOW, write a function called onlyEvens
+### @@@ Use the accumulator pattern, starting with an empty list.
+### @@@ Use a for loop to traverse the list.  Each time you find an item
+### @@@  if it isn't an int, return False---otherwise, if it is even, add
+### @@@  it to your accumulated list.
+
+
+def onlyEvens(listOfInts):
+    """
+    given a list of ints, return new list with only the even ones.  Otherwise, return false.
+
+    empty list yields empty list
+
+    >>> onlyEvens('1')
+    False
+    >>> onlyEvens(['a','b'])
+    False
+    >>> onlyEvens([])
+    []
+    >>> onlyEvens([1,2,3,4,5])
+    [2, 4]
+    >>> onlyEvens([1])
+    []
+    >>> onlyEvens([1,3])
+    []
+    >>> onlyEvens([3,2])
+    [2]
+    >>> onlyEvens([2,3,4])
+    [2, 4]
+    >>>
+
+
+
+    """
+
+    return "stub"
+    
+
+
+

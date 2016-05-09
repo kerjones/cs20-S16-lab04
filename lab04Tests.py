@@ -208,34 +208,34 @@ class TestLab04Functions(unittest.TestCase):
     def test_countEvens_7(self):
         self.assertEqual( countEvens([2,3,4]),    2)
 
-##    # tests for onlyEvens
-##
-##    def test_onlyEvens_1(self):
-##        self.assertEqual( onlyEvens('1') , False )
-##
-##    def test_onlyEvens_2(self):
-##        self.assertEqual( onlyEvens(['a','b']) , False )
-##
-##    def test_onlyEvens_3(self):
-##        self.assertEqual( onlyEvens([]),    [])
-##
-##    def test_onlyEvens_4(self):
-##        self.assertEqual( onlyEvens([1,2,3,4,5]),    [2, 4])
-##
-##    def test_onlyEvens_5(self):
-##        self.assertEqual( onlyEvens([1]),    [])
-##
-##    def test_onlyEvens_6(self):
-##        self.assertEqual( onlyEvens([1,3]),    [])
-##
-##    def test_onlyEvens_7(self):
-##        self.assertEqual( onlyEvens([3,2]),    [2])
-##
-##    def test_onlyEvens_1(self):
-##        self.assertEqual( onlyEvens([2,3,4]),    [2, 4])
-##
-##    # End of tests for lab04 
-##
+    # tests for onlyEvens
+
+    def test_onlyEvens_1(self):
+        self.assertEqual( onlyEvens('1') , False )
+
+    def test_onlyEvens_2(self):
+        self.assertEqual( onlyEvens(['a','b']) , False )
+
+    def test_onlyEvens_3(self):
+        self.assertEqual( onlyEvens([]),    [])
+
+    def test_onlyEvens_4(self):
+        self.assertEqual( onlyEvens([1,2,3,4,5]),    [2, 4])
+
+    def test_onlyEvens_5(self):
+        self.assertEqual( onlyEvens([1]),    [])
+
+    def test_onlyEvens_6(self):
+        self.assertEqual( onlyEvens([1,3]),    [])
+
+    def test_onlyEvens_7(self):
+        self.assertEqual( onlyEvens([3,2]),    [2])
+
+    def test_onlyEvens_1(self):
+        self.assertEqual( onlyEvens([2,3,4]),    [2, 4])
+
+    # End of tests for lab04 
+
 ##
 ##def runTestsWithPrefix(testFile,prefix):
 ##    """
